@@ -81,7 +81,7 @@ class SimpleSelectBase {
     [void]addData($data) {
         if ($this.data.Count) {
             # すでにある場合は最初のデータに追加
-            $this.data[0] += $data
+            $this.data[-1] += $data
         } else {
             # ない場合は追加
             $this.data += , $data
